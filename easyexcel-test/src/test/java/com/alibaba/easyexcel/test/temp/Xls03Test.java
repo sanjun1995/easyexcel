@@ -23,7 +23,7 @@ public class Xls03Test {
 
     @Test
     public void test() {
-        List<Object> list = EasyExcel.read("D:\\test\\8.xls").sheet().doReadSync();
+        List<Object> list = EasyExcel.read("/Users/caozhixin/IdeaProjects/easyexcel/easyexcel-test/src/test/resources/template/template03.xls").sheet().doReadSync();
         for (Object data : list) {
             LOGGER.info("返回数据：{}", JSON.toJSONString(data));
         }
